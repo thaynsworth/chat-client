@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="left-header">
+        <div id="userList"></div>
+      </div>
+      <div class="right-header">
+        <div id="loggedInUser"></div>
+        <div id="logOutUser"></div>
+      </div>    
+    </header>
+
+    <main>
+      <div class="user-rooms">
+        <div id="userRoomsList"></div>
+      </div>
+      <div class="chat-area">
+        <div id="roomMessages"></div>
+        <form id="newMessage">
+          Send a message: <br>
+          <input type="text" name="inputbox" value="">
+          <input type="button" name="button" value="Send" onClick="sendMessage(this.form)">
+        </form>
+      </div>
+    </main>
+    
+	<script src="index.js"></script>
+  </body>
+</html>

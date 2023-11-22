@@ -1,0 +1,86 @@
+/* style resets */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input, button, select {
+    font: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* header styles */
+
+header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    background-color: lightgrey;
+    padding: 1rem 2rem;
+    min-height: 20vh;
+}
+
+header > div {
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+header .right-header {
+    justify-content: flex-end;
+}
+
+
+
+/* chat styles */
+
+main {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    background-color: lightblue;
+    min-height: 80vh;
+    padding: 2rem;
+}
+
+main > div {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .user-rooms li {
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+main .chat-area {
+    flex-direction: column;
+}
+
+main .chat-area div {
+    padding: .25rem;
+}
+
+main .chat-area span {
+    padding: 0 1rem;
+}
+
+main .chat-area form {
+    margin-top: 1rem;
+    display: none;
+}
